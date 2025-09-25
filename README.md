@@ -1,8 +1,17 @@
 # PrusaSlicer.AppImage
 
+### Build instructions:
+To build and pack a new PrusaSlicer release, ensure [our fork](https://github.com/puavo-org/PrusaSlicer) is up-to-date (including tags) with the official PrusaSlicer repo.  
+This can be done via GitHub web interface or by cloning our fork, specifying upstream and running:  
+`git fetch --tags upstream && git push --tags`
+
+When the fork is up-to-date, you may trigger the "build" workflow in this repo, specifying a version tag or leaving it empty (build script will automatically find the latest tag and compile it if nothing is specified).  
+In case problems occur during compile, check upstream for a fix any possible fixes and pull them or try and solve the issue manually. Commit any necessary fixes onto a new branch e.g. `version_2.9.3+puavo` and trigger the "build" workflow, specifying said branch for the compile.
+
+
 ### Download
 
-https://github.com/probonopd/PrusaSlicer.AppImage/releases/latest
+https://github.com/puavo-org/PrusaSlicer.AppImage/releases/latest
 
 ### Background
 
