@@ -11,6 +11,7 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export ICON=/usr/share/icons/hicolor/192x192/apps/PrusaSlicer.png
 export DESKTOP=/usr/share/applications/PrusaSlicer.desktop
 export LOCALE_FIX=1
+export PATH_MAPPING_HARDCODED='prusa-slicer'
 
 # Deploy dependencies
 quick-sharun \
